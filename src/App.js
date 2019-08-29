@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const giphyAPI = "df4Kip5xanlPR49BrFPbDYar6kFWW1LT"
+const giphyURL = fetch(`http://api.giphy.com/v1/gifs/search?q=dogs&api_key=${giphyAPI}&limit=5`)
 
 function App() {
   return (
